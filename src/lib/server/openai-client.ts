@@ -13,7 +13,6 @@ export const createCompletionWithStream = async (payload: CreateCompletionParams
 
   const res = await fetch(`${OPEN_AI_BASE_URL}/completions`, {
     method: 'POST',
-    mode: 'cors',
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${OPENAI_API_KEY}`,

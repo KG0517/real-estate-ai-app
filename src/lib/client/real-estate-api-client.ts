@@ -8,6 +8,7 @@ export const generateRealEstateDescriptionStream = async (
 ) => {
   const res = await fetch(`${REAL_ESTATE_API_BASE_URL}/edge/generate`, {
     method: 'POST',
+    mode: 'cors',
     headers: {
       'Content-Type': 'application/json',
     },
